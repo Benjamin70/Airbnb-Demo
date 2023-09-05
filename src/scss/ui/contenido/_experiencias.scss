@@ -1,7 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.experiencias {
+.experiencias{
 
     &__listado{
         display: grid;
@@ -10,9 +10,11 @@
         @include m.scrollHorizontal;
         @include m.tablet{ 
             @include m.grid(3, 2rem);
+            overflow-x: auto;
         }
     }
 }
+
 
 .experiencia {
     &__imagen {
